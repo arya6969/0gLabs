@@ -206,7 +206,7 @@ function clearTransactionLogs() {
 
 const screen = blessed.screen({
   smartCSR: true,
-  title: "NT Exhaust",
+  title: "BEASTQWEET",
   fullUnicode: true,
   mouse: true
 });
@@ -218,8 +218,8 @@ const headerBox = blessed.box({
   tags: true,
   style: { fg: "white" }
 });
-figlet.text("NT EXHAUST", { font: "Speed", horizontalLayout: "default" }, (err, data) => {
-  if (err) headerBox.setContent("{center}{bold}NT EXHAUST{/bold}{/center}");
+figlet.text("BEASTQWEET", { font: "Speed", horizontalLayout: "default" }, (err, data) => {
+  if (err) headerBox.setContent("{center}{bold}BEASTQWEET{/bold}{/center}");
   else headerBox.setContent(`{center}{bold}{green-fg}${data}{/green-fg}{/bold}{/center}`);
   screen.render();
 });
